@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+:root{
+  --background: #3E3E3E;
+  --primary: #FFED00;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+
+nav{
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-logo{
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
+  margin-right: 4.25rem;
+  margin-top:1rem;
+}
+
+.nav-ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-li{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-right: 3.125rem;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: var(--primary);
+}
+
+hr{
+  border: 2px solid #707070;
+}
+
+
+.landing{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/grid.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  margin-bottom: 14.7rem;
+  padding: 3rem;
+
+}
+
+
+.landing-logo{
+  font-family: "Luckiest Guy", cursive;
+  font-size: 7.25rem;
+}
+
+.landing-logo-subtitle{
+  font-family: "Knewave", cursive;
+  font-size: 4.19rem;
+}
+
+.stack{
+  margin: auto;
+  margin-top: 8rem;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 12.25rem;
+}
+
+.stack-h1{
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 8rem;
+  margin-left: 7.5rem;
+}
+
+.stack article{
+  align-items: center;
+}
+
+.cloud{
+  border: 5px solid var(--primary);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4rem;
+
+}
+
+.stack-icons{
+  margin: 5rem 1.5rem 5rem 1.5rem;
+  min width: 2rem;
+}
+
+.projects{
+  margin-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-h1{
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
+}
+
+.project{
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  display: grid;
+  grid-column-gap: 8rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+  font-family: "Poppins", sans-serif;
+  line-height: 2rem;
+}
+
+#plant{
+  direction: rtl;
+}
+
+#plant p{
+  direction: ltr;
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1230px){
+  .stack{
+    flex-direction: column;
+  }
+
+  .cloud{
+    margin-bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .project{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
