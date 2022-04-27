@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
 
-:root{
-  --background: #3E3E3E;
-  --primary: #FFED00;
+:root {
+  --background: #3e3e3e;
+  --primary: #ffed00;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-
 }
 
-html{
+html {
   width: 100vw;
   height: 100vh;
   font-size: 16px;
@@ -23,7 +22,7 @@ html{
   color: var(--primary);
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,14 +30,12 @@ body{
   margin: auto;
 }
 
-
-nav{
+nav {
   width: 75%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   justify-content: center;
-
 }
 
 img {
@@ -46,35 +43,34 @@ img {
   height: auto;
 }
 
-.nav-logo{
+.nav-logo {
   font-family: "Luckiest Guy", cursive;
   font-size: 3rem;
   margin-right: 4.25rem;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
-.nav-ul{
+.nav-ul {
   display: flex;
   list-style-type: none;
 }
 
-.nav-li{
+.nav-li {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   margin-right: 3.125rem;
 }
 
-.nav-links{
+.nav-links {
   text-decoration: none;
   color: var(--primary);
 }
 
-hr{
+hr {
   border: 2px solid #707070;
 }
 
-
-.landing{
+.landing {
   width: 80%;
   height: 100%;
   display: flex;
@@ -88,21 +84,19 @@ hr{
   margin-top: 8rem;
   margin-bottom: 14.7rem;
   padding: 3rem;
-
 }
 
-
-.landing-logo{
+.landing-logo {
   font-family: "Luckiest Guy", cursive;
   font-size: 7.25rem;
 }
 
-.landing-logo-subtitle{
+.landing-logo-subtitle {
   font-family: "Knewave", cursive;
   font-size: 4.19rem;
 }
 
-.stack{
+.stack {
   margin: auto;
   margin-top: 8rem;
   display: flex;
@@ -110,32 +104,31 @@ hr{
   grid-column-gap: 12.25rem;
 }
 
-.stack-h1{
+.stack-h1 {
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5rem;
   margin-bottom: 8rem;
   margin-left: 7.5rem;
 }
 
-.stack article{
+.stack article {
   align-items: center;
 }
 
-.cloud{
+.cloud {
   border: 5px solid var(--primary);
   border-radius: 4rem;
   display: flex;
   justify-content: space-around;
   margin-left: 4rem;
-
 }
 
-.stack-icons{
+.stack-icons {
   margin: 5rem 1.5rem 5rem 1.5rem;
-  min width: 2rem;
+  min-width: 2rem;
 }
 
-.projects{
+.projects {
   margin-top: 25rem;
   display: flex;
   flex-direction: column;
@@ -143,12 +136,12 @@ hr{
   justify-content: center;
 }
 
-.projects-h1{
+.projects-h1 {
   font-family: "Luckiest Guy", cursive;
   font-size: 3rem;
 }
 
-.project{
+.project {
   padding-bottom: 10rem;
   padding-top: 10rem;
   display: grid;
@@ -160,11 +153,11 @@ hr{
   line-height: 2rem;
 }
 
-#plant{
+#plant {
   direction: rtl;
 }
 
-#plant p{
+#plant p {
   direction: ltr;
 }
 
@@ -174,21 +167,25 @@ hr{
   }
 }
 
-@media screen and (max-width: 1230px){
-  .stack{
+@media screen and (max-width: 1230px) {
+  .stack {
     flex-direction: column;
   }
 
-  .cloud{
+  .cloud {
     margin-bottom: 15rem;
   }
 }
 
-@media screen and (max-width: 760px){
+@media  (max-width: 860px){
   .project{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px){
+  html{
+    font-size: 32px;
   }
 }
