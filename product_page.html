@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="img/logo.svg" alt="#">
+      <nav id="nav-bar">
+        <ul class="nav-ul">
+          <li class="nav-link"><a href="#first_section">PRODUCT</a></li>
+          <li class="nav-link"><a href="#about_section">DESCRIPTION</a></li>
+          <li class="nav-link"><a href="#testimonial_section">TESTIMONIALS</a></li>
+          <li class="nav-link"><a href="#">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container-section" id="first_section">
+      <div class="plant-div">
+        <img src="img/plant_circle.svg" alt="#">
+
+      </div>
+      <div class="cta-div">
+        <div class="cta">
+        <h1 class="cta-title">Greenest Plant You’ve <br> Ever Seen</h1>
+        <p class="cta-p">If you’ve ever seen a plant,
+           No one is better <br> than this one</p>
+           <div class="buttons-div">
+             <button class="button" id="cta_buy" type="button" name="button">BUY NOW</button>
+             <button class="button" id="see_more" type="button" name="button">See More</button>
+           </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-section" id="about_section">
+      <h1 id="about_title">About Our Plant</h1>
+      <div id="about_div">
+      <div class="video-div">
+        <video src="video.mp4" controls poster="#">
+        </video>
+        <button class=" button" id = "video-button" type="button" name="button">BUY NOW</button>
+      </div>
+      <div class="clouds-div">
+        <div class="clouds-col">
+          <img src="img/radial_images/CO2.svg" alt="#">
+          <div class="cloud" id="co2">
+            <p>our plants are produced with<br>zero
+               CO2 emissions to ensure<br>complete
+              protection of the<br>environment</p>
+          </div>
+          <img src="img/radial_images/tree.svg" alt="">
+          <div class="cloud" id="tree">
+            <p>for each plant sold, we will plant<br>
+              a tree for you in our forest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="container-section" id="testimonial_section">
+      <h1 id="test_title">Our Testimonials...</h1>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <img class="test-img" src="img/radial_images/Samantha.svg" alt="#">
+          <h2 class="test-name">Samantha Rainalds</h2>
+          <p>Lorem ipsum dolor sit<br>amet, consectetur<br>
+             adipisicing elit,<br>sed do eiusmod tempor<br>
+            incididunt ut labore et.</p>
+        </div>
+        <div class="testimonial">
+          <img class="test-img" src="img/radial_images/Mattew.svg" alt="#">
+          <h2 class="test-name">Mattew Khan</h2>
+          <p>Lorem ipsum dolor sit<br>amet, consectetur<br>
+             adipisicing elit,<br>sed do eiusmod tempor<br>
+            incididunt ut labore et.</p>
+        </div>
+        <div class="testimonial">
+          <img class="test-img" src="img/radial_images/Josh.svg" alt="#">
+          <h2 class="test-name">Joshua Lumberr</h2>
+          <p>Lorem ipsum dolor sit<br>amet, consectetur<br>
+             adipisicing elit,<br>sed do eiusmod tempor<br>
+            incididunt ut labore et.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container-section" id="contact_section">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <h1>Contact Us</h1>
+        <fieldset>
+        <input id="email" type="email" name="email" value="email">
+        <input id="text" type="text" name="text" value="text">
+        <input id="submit" class="button" type="submit" name="submit" value="submit">
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

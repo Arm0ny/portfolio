@@ -161,9 +161,11 @@ hr {
   direction: ltr;
 }
 
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 14px;
+@media  screen and (max-width: 860px){
+  .project{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -177,15 +179,9 @@ hr {
   }
 }
 
-@media  (max-width: 860px){
-  .project{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
 
-@media screen and (max-width: 800px){
-  html{
-    font-size: 32px;
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 14px;
   }
 }
