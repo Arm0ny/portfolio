@@ -38,6 +38,10 @@ nav {
   justify-content: center;
 }
 
+#hamburger{
+  display: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +171,24 @@ hr {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  .navbar {
+    display: flex;
+  }
+
+  .nav-logo{
+    font-size: 2.5rem;
+  }
+
+
+  .navbar ul{
+    display: none;
+  }
+
+  #hamburger{
+    display: block;
+    right: 50%;
+  }
 }
 
 @media screen and (max-width: 1230px) {
@@ -184,4 +206,5 @@ hr {
   html {
     font-size: 14px;
   }
+
 }
