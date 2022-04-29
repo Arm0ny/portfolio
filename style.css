@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 90vw;
   margin: auto;
 }
 
@@ -83,11 +83,11 @@ hr {
   background-image: url(img/grid.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-top: 8rem;
   margin-bottom: 14.7rem;
   padding: 3rem;
+
 }
 
 .landing-logo {
@@ -101,17 +101,20 @@ hr {
 }
 
 .stack {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: auto;
-  margin-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+
 }
 
 .stack article {
-  width: 80%;
+  width: 100%;
+  height: 70%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr;
@@ -123,26 +126,27 @@ hr {
 .stack-h1 {
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5rem;
-  margin-bottom: 8rem;
 
 }
 
 
 .cloud {
+  width: 60%;
+  height: 80%;
   margin: auto;
-  height: 90%;
-  width: 80%;
   border: 5px solid var(--primary);
   border-radius: 4rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;;
+  align-items: center;
 
 }
 
 .stack-icons {
   margin: auto;
-  min-width: 2rem;
+  display: block;
+
+
 }
 
 .projects {
@@ -181,10 +185,28 @@ hr {
 
 
 @media screen and (max-width: 1230px) {
+  .landing-logo{
+    font-size: 7rem;
+  }
+
   .stack {
     flex-direction: column;
   }
 
+}
+
+@media screen and (max-width: 1140px){
+  .landing{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: none;
+    justify-content: center;
+  }
+
+  .landing img{
+    grid-row: 1;
+  }
 }
 
 
@@ -220,9 +242,17 @@ hr {
 
   .stack{
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr;
-    background-color: red;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5rem;
+    background-color: #278900;
 
+
+
+  }
+
+  .stack article{
+    height: 100%;
+    grid-template-rows: 1fr 2fr;
   }
 
   .stack h1{
