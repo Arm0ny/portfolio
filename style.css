@@ -101,34 +101,47 @@ hr {
 }
 
 .stack {
+  width: 100%;
   margin: auto;
   margin-top: 8rem;
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 12.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack article {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .stack-h1 {
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5rem;
   margin-bottom: 8rem;
-  margin-left: 7.5rem;
+
 }
 
-.stack article {
-  align-items: center;
-}
 
 .cloud {
+  margin: auto;
+  height: 90%;
+  width: 80%;
   border: 5px solid var(--primary);
   border-radius: 4rem;
   display: flex;
   justify-content: space-around;
-  margin-left: 4rem;
+  align-items: center;;
+
 }
 
 .stack-icons {
-  margin: 5rem 1.5rem 5rem 1.5rem;
+  margin: auto;
   min-width: 2rem;
 }
 
@@ -165,6 +178,18 @@ hr {
   direction: ltr;
 }
 
+
+
+@media screen and (max-width: 1230px) {
+  .stack {
+    flex-direction: column;
+  }
+
+}
+
+
+
+
 @media  screen and (max-width: 860px){
   .project{
     display: grid;
@@ -174,6 +199,8 @@ hr {
 
   .navbar {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .nav-logo{
@@ -187,24 +214,21 @@ hr {
 
   #hamburger{
     display: block;
-    right: 50%;
-  }
-}
 
-@media screen and (max-width: 1230px) {
-  .stack {
-    flex-direction: column;
   }
 
-  .cloud {
-    margin-bottom: 15rem;
-  }
-}
+  .stack{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr;
+    background-color: red;
 
-
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 14px;
   }
 
+  .stack h1{
+    font-size: 1.7rem;
+  }
+
+  .stack-article{
+
+  }
 }
