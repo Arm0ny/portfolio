@@ -185,6 +185,11 @@ hr {
 
 
 @media screen and (max-width: 1230px) {
+
+  .landing{
+    margin-top: 2rem;
+  }
+
   .landing-logo{
     font-size: 7rem;
   }
@@ -200,6 +205,7 @@ hr {
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-row-gap: 2rem;
     background: none;
     justify-content: center;
   }
@@ -209,6 +215,23 @@ hr {
   }
 }
 
+
+@media  screen and (max-width: 1060px){
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  #hamburger{
+    display: block;
+
+  }
+}
 
 
 
@@ -220,31 +243,19 @@ hr {
     text-align: center;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+
 
   .nav-logo{
     font-size: 2.5rem;
   }
 
 
-  .navbar ul{
-    display: none;
-  }
-
-  #hamburger{
-    display: block;
-
-  }
 
   .stack{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 5rem;
-    background-color: #278900;
+
 
 
 
@@ -259,4 +270,31 @@ hr {
     font-size: 1.7rem;
   }
 
+}
+
+@media  screen and (max-width: 660px){
+
+  .landing{
+    margin-top: 3rem;
+  }
+
+  .landing-logo{
+    font-size: 3.5rem;
+  }
+
+  .landing-logo-subtitle{
+    font-size: 3rem;
+  }
+}
+
+@media  screen and (max-width: 440px){
+
+
+  .landing-logo{
+    font-size: 3.5rem;
+  }
+
+  .landing-logo-subtitle{
+    font-size: 3rem;
+  }
 }
