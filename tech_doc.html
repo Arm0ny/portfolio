@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/css/tech_doc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>A brief introduction<br>
+      to Python</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Operators">Operators</a></li>
+        <li><a class="nav-link" href="#Conditions">Conditions</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+      </ul>
+    </nav>
+    <!------------------------------------------------------>
+    <!------------------------------------------------------>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article class="article">
+          <p>Python is an interpreted programming language invented in 1991
+          by Guido van Rossum, it's high level sintax makes it incredibly easy to learn
+          and it's versatility makes it the perfect choice for several applications
+          and topics.
+          In this guide we will show how easy it is to get started with python and
+          introduce you to the basic concepts of this incredibly powerfull language</p>
+
+          <h2>Download and Install</h2>
+          <p>In order to download and install Python on your system you have to:</p>
+          <ol>
+            <li>Go to <a href="https://www.python.org/downloads/">Download Python</a>page</li>
+            <li>Click on the Yellow Button that says "Download Python" in the top-left of the page<br>
+            <i>Note: this may Change in Future but the concept should remain the same</i></li>
+            <li>Unpack the downloaded file if necessary</li>
+            <li>Double click on the .exe/.dmg depending on your system and follow the instruction
+            provided by the setub wizard in order to install Python correctly</li>
+          </ol>
+          <p>At this point you should have installed the Python IDE application that we will use
+          later to start programming in Python</p>
+        </article>
+      </section>
+<!---------------------------------------------------------->
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>The first and most important aspect of every programming language
+        is certainly <b>Variables</b>, those are the foundamental instrument to read
+        and store data that you'll need in future in your program.
+        For example:</p>
+
+      <code>a = 26</code>
+
+        <p>means that in the variable called a it is stored the value of 26</p>
+        <p>infact if you type:</p>
+
+        <code>print(a)<br>
+        output: 26</code>
+
+        <p><i>Note: the 'print' command is used to display data to the console</i>
+        as you can see the output of the print instuction passing the name of the Variable
+        is the value stored in it</p>
+
+        <em>important: Variables name can start whith letters and special cases but not
+        with a number</em>
+      </section>
+<!---------------------------------------------------------->
+      <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <article class="article">
+          <p>What we learned so far is important but not enough to make actual
+          operations with our program, to reach that goal, we first need to learn about
+          <b>Operators</b>.<br>
+          These are no other then what you expect from their name: symbols to let the
+          program know what operation to perform.
+          for example, if we write:</p>
+
+          <code>print(26+3)<br>
+          Output: 29</code>
+
+          <p>Or:</p>
+
+          <code>print(26-3)<br>
+          Output: 23</code>
+          <p>And so on</p>
+
+          <p>a complete list of the Python operators could be found at
+          <a href="https://www.w3schools.com/python/python_operators.asp">
+          This Link</a></p>
+
+          <p>Now that we know ho to use Operators and Variables we can combine
+          them toghether to obtain awesome results.
+          For example:</p>
+
+          <code>a = 26<br>
+          b = 10<br>
+          print(a+b)</code>
+          <code>Output: 36</code>
+
+        </article>
+      </section>
+<!---------------------------------------------------------->
+      <section class="main-section" id="Conditions">
+        <header>Conditions</header>
+        <article class="article">
+          <p>Now that we know well how to use operators to perform operations
+          we can talk about <b>Conditional Statements</b>, these are special functions
+          provided by every programming language that are used to perform an application
+          <b>Only if a certain Condition is  met.</b>
+          The principal "building blocks" of a condition in python are:</p>
+
+          <ul>
+            <li>if</li>
+            <li>else</li>
+          </ul>
+
+          <p>Let's see them in action with an example: <br>
+          let's assume that you want to check if a certain number a is grater
+          than another number b and if this is true, you whant to display a message
+          which says that a is grater than b, if not you want to display the opposit
+          in this case we can do as it follows: </p>
+
+          <code>a = 26<br>
+          b = 10<br>
+          if a > b:<br>
+          <p class="indent">print("a is grater than b")</p>
+          else:<br>
+          <p class="indent">print("a is not grater than b")</p></code>
+          <code>Output: a is grater than b </code>
+
+          <p>The if statement takes care only of the condition expressed after it's called
+          while the else statement does something in all the other cases, infact, in our example,
+          the if statement checks only if a in grater than b and the else statement is "activated"
+          in all the other cases (a < b or a = b).</p>
+
+          <p>to express more than one condition we can use the <b>elif</b> statement.
+          For example:</p>
+
+          <code>a = 26<br>
+          b = 10<br>
+          if a > b:<br>
+          <p class="indent">print("a is grater than b")</p>
+          elif a < b:<br>
+          <p class="indent">print("a is less than b")</p>
+          else:<br>
+          <p class="indent">print("a and b are equal")</p></code>
+          <code>Output: a is grater than b </code>
+
+          <p>with a < b:</p>
+
+          <code>a = 6<br>
+          b = 10<br>
+          if a > b:<br>
+          <p class="indent">print("a is grater than b")</p>
+          elif a < b:<br>
+          <p class="indent">print("a is less than b")</p>
+          else:<br>
+          <p class="indent">print("a and b are equal")</p></code>
+          <code>Output: a is less than b </code>
+
+          <p>with a = b:</p>
+
+          <code>a = 10<br>
+          b = 10<br>
+          if a > b:<br>
+          <p class="indent">print("a is grater than b")</p>
+          elif a < b:<br>
+          <p class="indent">print("a is less than b")</p>
+          else:<br>
+          <p class="indent">print("a and b are equal")</p></code>
+          <code>Output: a and b are equal </code>
+
+          <p>Remember that the little space befor the print lines is called <b>indentation</b>
+          and it's a way to let the program know that the line itself belongs to the Statement
+          in witch is indented, in other words it defines a sort of hierarchy to define witch line
+          of code belongs to which construct and should be executed within it</p>
+        </article>
+      </section>
+<!---------------------------------------------------------->
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article class="article">
+          <p>As the name suggests Loops are special constructs provided by Python for repeating
+          a certain  action in a special condition.
+          The main two loops of the python programming language are:</p>
+
+          <ul>
+            <li>While Loop</li>
+            <li>For Loop</li>
+          </ul>
+
+          <p>the <b>While Loop</b> is used to repeat an instruction unless a
+          certain condition is met, the condition itself is expressed after the While
+          keyword, the instruction or instructions to repeat are expressed
+          after the semicoloumn whith the correct indentation.
+          Let's make an example:</p>
+
+          <code>a = 0<br>
+          b = 5<br>
+          while a < b:<br>
+          <p class="indent">print(a)</p>
+          <p class="indent">a += 1</p></code>
+
+          <p>The code itself is almost self explainatory, we declaired two
+          variables: one is our a variable and the other is our b variable,
+          entering the loop, the program checks is a is less than b, and if the
+          Condition is met, it prints the value of a and increments it
+          (a *= 1 is the shorthand for a = a + 1) these two instructions are
+          repeted 5 times aka unless the value of a is less than the value of b</p>
+
+          <code>Output_1 0<br>
+          Output_2 1<br>
+          Output_3 2<br>
+          Output_4 3<br>
+          Output_5 4</code>
+
+          <p>Just like yhe While loop, the <b>For Loop</b> is also used to repeating
+          actions subdued to a condition whith the difference that it can be used
+          to repeat in a certain <b>range</b> of times and the word is not
+          higlighted casually, infact, the for construct is often used whith the
+          <b>range()</b> function.
+          let's write some code to be clear:</p>
+
+          <code>a = 0<br>
+          for a in range(0,5,1)<br>
+          <p class="indent">print(a)</p></code>
+
+          <p>Ok now that wer have our piece of code to analyze, we can see in
+            first place that we haven't used the instruction a += 1, this is because
+            the for loop automatically increments the variable provided in it's call.
+            But how he knows the way to increment the variable and where to stop
+            and begin?
+            All those data are provided by the range() function, the first argumrnt
+            in the parenthesis is the beginning of the interval, the second is the end
+            and the third is the increment.
+            So for a verbose lectur of the code we can say that in the loop we print
+            the value of a 0 to 5 times and each time we increment a by 1.
+            <i>Note that the beginning and ending of the interval are independent from
+            the value of a and indicates <b>only the number of time to repeat the cicle</b></i></p>
+        </article>
+      </section>
+<!---------------------------------------------------->
+
+    </main>
+
+  </body>
+</html>
