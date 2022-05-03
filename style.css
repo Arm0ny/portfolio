@@ -7,6 +7,38 @@
   --primary: #ffed00;
 }
 
+/* Classes to add with javascript */
+
+.nav-responsive{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--background);
+  box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+.nav-logo-responsive{
+  margin: auto;
+
+}
+
+.nav-ul-responsive{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +74,11 @@ nav {
   display: none;
 }
 
+#close-arrow{
+  display: none;
+  margin: auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -50,8 +87,7 @@ img {
 .nav-logo {
   font-family: "Luckiest Guy", cursive;
   font-size: 3rem;
-  margin-right: 4.25rem;
-  margin-top: 1rem;
+
 }
 
 .nav-ul {
@@ -62,7 +98,6 @@ img {
 .nav-li {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  margin-right: 3.125rem;
 }
 
 .nav-links {
@@ -221,7 +256,9 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.16);
   }
+
 
   .navbar ul{
     display: none;
@@ -230,6 +267,10 @@ hr {
   #hamburger{
     display: block;
 
+  }
+
+  hr{
+    display: none;
   }
 }
 
