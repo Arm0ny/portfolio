@@ -7,38 +7,7 @@
   --primary: #ffed00;
 }
 
-/* Classes to add with javascript */
 
-.nav-responsive{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50vh;
-  width: 100%;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  background-color: var(--background);
-  box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.16);
-}
-
-.nav-logo-responsive{
-  margin: auto;
-
-}
-
-.nav-ul-responsive{
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* ----------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +32,7 @@ body {
 }
 
 nav {
+
   width: 75%;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -72,11 +42,16 @@ nav {
 
 #hamburger{
   display: none;
+  background-color: transparent;
+  border: none;
 }
 
 #close-arrow{
   display: none;
   margin: auto;
+  background-color: transparent;
+  border: none;
+
 }
 
 img {
@@ -88,16 +63,22 @@ img {
   font-family: "Luckiest Guy", cursive;
   font-size: 3rem;
 
+
 }
 
 .nav-ul {
+  width: 80%;
+  height: 100%;
   display: flex;
   list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-li {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
+  display: block;
 }
 
 .nav-links {
@@ -250,7 +231,6 @@ hr {
   }
 }
 
-
 @media  screen and (max-width: 1060px){
   .navbar {
     display: flex;
@@ -273,8 +253,6 @@ hr {
     display: none;
   }
 }
-
-
 
 @media  screen and (max-width: 860px){
   .project{
@@ -339,3 +317,37 @@ hr {
     font-size: 3rem;
   }
 }
+
+
+/* Classes to add with javascript */
+
+.nav-responsive{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--background);
+  box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+.nav-logo-responsive{
+  margin: auto;
+
+}
+
+.nav-ul-responsive{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------------- */
