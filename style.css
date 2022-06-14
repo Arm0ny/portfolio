@@ -27,8 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90vw;
-  margin: auto;
+  padding: 1rem 4rem;
+  gap: 8rem;
 }
 
 nav {
@@ -38,6 +38,7 @@ nav {
   grid-template-columns: 1fr 3fr;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #707070;
 }
 
 #hamburger{
@@ -86,12 +87,10 @@ img {
   color: var(--primary);
 }
 
-hr {
-  border: 2px solid #707070;
-}
+
 
 .landing {
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -99,9 +98,6 @@ hr {
   background-image: url(img/grid.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
-  margin-top: 8rem;
-  margin-bottom: 14.7rem;
   padding: 3rem;
 
 }
@@ -117,20 +113,19 @@ hr {
 }
 
 .stack {
-  width: 100vw;
   height: 100vh;
-  margin: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  margin: auto;
 
 }
 
 .stack article {
   width: 100%;
   height: 70%;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr;
@@ -148,7 +143,7 @@ hr {
 
 .cloud {
   width: 60%;
-  height: 80%;
+  height: 70%;
   margin: auto;
   border: 5px solid var(--primary);
   border-radius: 4rem;
@@ -159,14 +154,13 @@ hr {
 }
 
 .stack-icons {
-  margin: auto;
-  display: block;
+  display: flex;
+  max-width: 20%;
 
 
 }
 
 .projects {
-  margin-top: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
